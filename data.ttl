@@ -1,0 +1,47 @@
+@prefix data: <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:alibaba a schema:Organization ;
+    schema:founder data:jack_ma ;
+    schema:name "Alibaba Group" ;
+    schema:url "https://www.alibabagroup.com" .
+
+data:nestle a schema:Organization ;
+    schema:funder data:john_reith ;
+    schema:name "Nestlé" ;
+    schema:subOrganization data:nespresso ;
+    schema:url "https://www.nestle.com/" .
+
+data:bbc a schema:Organization ;
+    schema:funder data:john_reith ;
+    schema:name "BBC" ;
+    schema:owner data:ukgov ;
+    schema:subOrganization data:bbc_radio ;
+    schema:url "https://www.bbc.com/" .
+
+data:bbc_radio a schema:Organization ;
+    schema:name "BBC Radio" ;
+    schema:parentOrganization data:bbc ;
+    schema:url "https://www.bbc.co.uk/sounds" .
+
+data:nespresso a schema:Organization ;
+    schema:name "Nespresso" ;
+    schema:url "https://www.nespresso.com" .
+
+data:stonehaven a schema:Place ;
+    schema:name "Stonehaven" .
+
+data:ukgov a schema:Organization ;
+    schema:name "Government of the United Kingdom" ;
+    schema:url "https://www.gov.uk/" .
+
+data:john_reith a schema:Person ;
+    schema:birthPlace data:stonehaven ;
+    schema:name "Henri Nestlé",
+        "John Reith, 1st Baron Reith" .
+
