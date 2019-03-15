@@ -36,7 +36,7 @@ Example:
 		'
 
 
-##GET /dataset
+## GET /dataset
 
 Retreive the complete dataset.
 
@@ -55,4 +55,4 @@ Use the following commands to install required packages, and to launch the serve
 # Improvements
 
 * Support concurrent access to the data store
-* 
+* Validate data using ShEx for instance
