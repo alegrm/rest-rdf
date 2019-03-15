@@ -1,16 +1,6 @@
-# Digital Move test
+# REST RDF
 
-Assignment:
-
-1. Define a simple ontology/taxonomy (up to 5 classes, up to 10 individuals) for companies (rdf/owl).
-2. Provide REST endpoint to add a new instances to the dataset.
-3. Provide REST endpoint to remove an existing instances from the dataset.
-4. Provide a way via REST to download modified dataset in rdf/owl.
-
-
-# API description
-
-I've used Flask to implement the RESTful api, and Rdflib to handle RDF data. A single SPARQL query is used to retreive company data from the dataset and from the user-provided data. This query allows to avoid inserting undesired data to the dataset. 
+A simple Flask APP to implement the RESTful api, and Rdflib to handle RDF data. A single SPARQL query is used to retreive company data from the dataset and from the user-provided data. This query allows to avoid inserting undesired data to the dataset. 
 
 ## GET /company/<id:string>
 
